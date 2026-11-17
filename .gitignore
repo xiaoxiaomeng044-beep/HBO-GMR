@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+outputs/
+runtime/
+.DS_Store
+Thumbs.db
+*.RSM
+*.DATA
+*.INC
+*.GRDECL

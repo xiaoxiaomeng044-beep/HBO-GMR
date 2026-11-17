@@ -1,0 +1,157 @@
+{
+  "name": "PUNQ-S3",
+  "nx": 19,
+  "ny": 28,
+  "nz": 5,
+  "N": 200,
+  "n_observations": 19,
+  "n_timesteps": 82,
+  "n_assim": 4,
+  "obs_names": [
+    "FOE",
+    "WBHP1",
+    "WBHP2",
+    "WBHP3",
+    "WBHP4",
+    "WBHP5",
+    "WBHP6",
+    "GOR1",
+    "GOR2",
+    "GOR3",
+    "GOR4",
+    "GOR5",
+    "GOR6",
+    "WCT1",
+    "WCT2",
+    "WCT3",
+    "WCT4",
+    "WCT5",
+    "WCT6"
+  ],
+  "obs_foe_idx": 0,
+  "obs_bhp_start": 1,
+  "obs_gor_start": 7,
+  "obs_wct_start": 13,
+  "producers": [
+    {
+      "name": "PROD1",
+      "i": 9,
+      "j": 21,
+      "k": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "PROD2",
+      "i": 8,
+      "j": 16,
+      "k": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "PROD3",
+      "i": 16,
+      "j": 10,
+      "k": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "PROD4",
+      "i": 10,
+      "j": 23,
+      "k": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "PROD5",
+      "i": 14,
+      "j": 11,
+      "k": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "PROD6",
+      "i": 16,
+      "j": 21,
+      "k": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "injectors": [],
+  "prior_files": {
+    "permx": "sgsim.out",
+    "poro": "sgsimporo.out",
+    "permz": "sgz.out",
+    "effective": "effective.out"
+  },
+  "reference_files": {
+    "permx": "rossmary.GRDECL",
+    "poro": "rossmaryporo.GRDECL",
+    "permz": "rossmaryz2.GRDECL"
+  },
+  "eclipse": {
+    "data_template": "MASTER0.DATA",
+    "rsm_truth": "Real.RSM",
+    "launcher": "eclrun eclipse MASTER0.DATA"
+  },
+  "parameter_bounds": {
+    "permx": [
+      0.5073,
+      999.1116
+    ],
+    "poro": [
+      0.01024,
+      0.2992
+    ],
+    "permz": [
+      0.1478,
+      498.4011
+    ]
+  },
+  "observation_errors": {
+    "FOE": 0.1,
+    "WBHP": 0.15,
+    "GOR": 0.15,
+    "WCT": 0.2
+  },
+  "patch_size": [
+    4,
+    16,
+    4
+  ],
+  "patch_channels": [
+    "logk",
+    "poro"
+  ],
+  "n_patch_coords": 128,
+  "default_localization_radius": 5.0
+}

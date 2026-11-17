@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "mode": "terminal_simplex",
+  "n_assim": 4,
+  "budget_shares": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "alpha_schedule": [
+    4.0,
+    4.0,
+    4.0,
+    4.0
+  ],
+  "budget_sum": 1.0,
+  "inverse_alpha_sum": 1.0,
+  "schedule_hash": "5073e61eafb5e090b20e50cfa38e1505dbb9a00d659ef6cd6659298674226ad7",
+  "source": "stage_f_confirmatory_standard_equivalent",
+  "selection_fidelity": "frozen_before_confirmatory_runs",
+  "metadata": {
+    "role": "Standard ES-MDA equivalent control",
+    "equivalence": "localized APBO execution path with fixed [4,4,4,4], online optimizer disabled",
+    "development_seed": 2026,
+    "confirmatory_tuning": false
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "checkpoint": "gmr_refactor/checkpoints/gmr_flow.pt",
+  "history_csv": "gmr_refactor/checkpoints/gmr_flow_history.csv",
+  "flow_config": {
+    "flow_type": "realnvp",
+    "dim": 32,
+    "hidden_dim": 128,
+    "num_layers": 6,
+    "scale_clip": 2.0
+  },
+  "vae_checkpoint": "gmr_refactor/checkpoints/gmr_vae.pt",
+  "vae_model_config": {
+    "in_channels": 2,
+    "input_shape_dhw": [
+      4,
+      16,
+      4
+    ],
+    "latent_dim": 32,
+    "base_channels": 24,
+    "feature_shape": [
+      96,
+      2,
+      4,
+      2
+    ],
+    "architecture": "3D Attention VAE with CBAM residual blocks"
+  },
+  "dataset_npz": "gmr_refactor/data/prior_patch_dataset.npz",
+  "train_args": {
+    "dataset_npz": "gmr_refactor/data/prior_patch_dataset.npz",
+    "vae_ckpt": "gmr_refactor/checkpoints/gmr_vae.pt",
+    "out_dir": "gmr_refactor/checkpoints",
+    "epochs": 60,
+    "batch_size": 256,
+    "lr": 0.0005,
+    "weight_decay": 1e-05,
+    "hidden_dim": 128,
+    "num_layers": 6,
+    "scale_clip": 2.0,
+    "seed": 2025,
+    "device": "auto",
+    "num_workers": 0,
+    "max_train_batches": 0,
+    "max_val_batches": 0
+  },
+  "best_epoch": 37,
+  "best_val_nll": 39.77840805053711,
+  "best_val_nll_q50": 39.277793884277344,
+  "best_val_nll_q75": 42.47014904022217,
+  "best_val_nll_q90": 46.00680694580078,
+  "runtime_sec_so_far": 592.4793612957001,
+  "runtime_sec": 881.8848512172699,
+  "finished": true
+}

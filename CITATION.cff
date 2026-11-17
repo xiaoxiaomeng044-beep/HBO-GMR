@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite the HBO-GMR manuscript and the released software version used in your work."
+title: "HBO-GMR: Bayesian tuning and learned geological correction for ensemble-based reservoir history matching"
+type: software
+version: 1.0.0
+date-released: 2026-11-17
+license:
+  - MIT
+  - CC-BY-4.0
+authors:
+  - family-names: Meng
+    given-names: Ziran
+  - family-names: Li
+    given-names: Jing
+  - family-names: Qian
+    given-names: Huanran
+  - family-names: Hu
+    given-names: Xuesong
+  - family-names: Chen
+    given-names: Zhangxing
+repository-code: "https://github.com/xiaoxiaomeng044-beep/HBO-GMR"
+url: "https://github.com/xiaoxiaomeng044-beep/HBO-GMR"

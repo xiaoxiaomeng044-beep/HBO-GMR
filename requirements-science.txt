@@ -1,0 +1,9 @@
+-r requirements-model.txt
+pandas==2.2.2
+matplotlib==3.8.4
+scipy==1.13.0
+scikit-learn==1.7.1
+scikit-optimize==0.10.2
+seaborn==0.13.2
+XlsxWriter==3.2.9
+cma==4.4.4

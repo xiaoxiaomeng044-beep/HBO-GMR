@@ -1,0 +1,23 @@
+{
+  "lambda_sequence": [
+    0.3880391865968704,
+    0.5574749000370502,
+    0.7532793562859297,
+    0.8493152437731624
+  ],
+  "metadata": {
+    "candidate_id": "e011",
+    "primary_reference": "Standard ES-MDA c000",
+    "role": "method_level_one_shot_l3",
+    "secondary_reference": "APBO-only e000",
+    "seed": 2026,
+    "selection_fidelity": "L2",
+    "selection_rule": "Require both production U95 values <= 0 and strict GeoScore improvement versus Standard; select minimum GeoScore.",
+    "source_old_no_promotion_receipt": "archive_receipt.json",
+    "stage": "E5"
+  },
+  "n_steps": 4,
+  "protocol": "stage_e_terminal_gmr_sequence",
+  "sequence_hash": "b355e838e69fecb5818851af1d3399668fea96b2a41cc60598165a54cb114945",
+  "version": 1
+}

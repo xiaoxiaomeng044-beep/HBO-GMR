@@ -1,0 +1,67 @@
+{
+  "config": {
+    "nx": 19,
+    "ny": 28,
+    "nz": 5,
+    "n_ensemble": 200,
+    "patch_size_xyz": [
+      4,
+      16,
+      4
+    ],
+    "n_patch_coords": 128,
+    "min_valid_fraction": 0.75,
+    "val_fraction": 0.15,
+    "seed": 2025,
+    "channels": [
+      "log10_perm_x",
+      "poro"
+    ],
+    "permx_file": "sgsim.out",
+    "poro_file": "sgsimporo.out",
+    "permz_file": "sgz.out",
+    "effective_file": "effective.out"
+  },
+  "output_npz": "gmr_refactor/data/prior_patch_dataset.npz",
+  "patch_tensor_convention": "samples, channels, depth, height, width",
+  "patch_coord_convention": "ix, iy, iz in PUNQ xyz grid",
+  "patch_size_dhw": [
+    4,
+    16,
+    4
+  ],
+  "n_available_patch_coords": 306,
+  "n_selected_patch_coords": 128,
+  "n_train_realizations": 170,
+  "n_val_realizations": 30,
+  "n_train_samples": 21760,
+  "n_val_samples": 3840,
+  "patches_train_shape": [
+    21760,
+    2,
+    4,
+    16,
+    4
+  ],
+  "patches_val_shape": [
+    3840,
+    2,
+    4,
+    16,
+    4
+  ],
+  "channel_mean": [
+    2.0250864028930664,
+    0.1442381888628006
+  ],
+  "channel_std": [
+    0.6284676790237427,
+    0.057632070034742355
+  ],
+  "source_files": {
+    "permx": "sgsim.out",
+    "poro": "sgsimporo.out",
+    "permz": null,
+    "effective": "effective.out"
+  }
+}
