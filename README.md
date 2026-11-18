@@ -2,6 +2,8 @@
 
 Code and pretrained models for **HBO-GMR: Bayesian tuning and learned geological correction for ensemble-based reservoir history matching**.
 
+See the [user guide](docs/USER_GUIDE.md) for installation, example inputs and outputs, expected results, and the setup for simulator-backed runs. The guide covers code release v1.0.0.
+
 ## Setup
 
 Tested with Python 3.12.
